@@ -1,0 +1,5 @@
+# Emperor Palpatine
+
+Emperor PalpatinePublication informationPublisherDe AgostiniFirst releasedMay 25,2021General informationSeriesStar Wars Encyclopedia[Source]"Emperor Palpatine" is a volume in theStar Wars Encyclopediaseries of reference books published byDe Agostini. It was published onMay 25,2021.
+
+The man born Sheev Palpatine would eventually become one of the most infamous figures in galactic history. Transforming himself into the Sith Lord Darth Sidious, he orchestrated a devious scheme that earned him the position of Supreme Chancellor of the Republic, plunged the galaxy into a conflict that claimed millions of lives, and ultimately allowed him to proclaim himself Emperor. Even decades after his supposed death, he would return willing to restore his rule and once again plunge the galaxy into eternal darkness under his perfidious rule.
