@@ -1,0 +1,63 @@
+@startuml
+title Обработка запроса RAG-ботом и последующая оценка качества ответа
+
+actor Пользователь
+participant "Бот" as Bot
+participant "RAG-движок" as RAG
+participant "Модель эмбеддингов\n(BAAI/bge-base-en)" as Embedder
+participant "Векторная БД\n(ChromaDB)" as VectorDB
+participant "LLM\n(Генерация ответа)" as LLM
+participant "Модуль оценки\n(evaluate.py)" as Eval
+participant "LLM-судья" as Judge
+database "Логи\n(JSONL)" as Logs
+
+== Обработка пользовательского запроса ==
+
+Пользователь -> Bot: Текстовый вопрос
+Bot -> RAG: Передать вопрос
+
+RAG -> Embedder: Преобразовать вопрос в эмбеддинг
+Embedder --> RAG: Вектор запроса
+
+RAG -> VectorDB: Поиск релевантных чанков (top-k)
+VectorDB --> RAG: Найденные чанки + метаданные
+
+alt Релевантные чанки не найдены
+    RAG -> Bot: Ответ: «Я не знаю»
+else Чанки найдены
+    RAG -> RAG: Фильтрация вредоносных и нерелевантных чанков
+    RAG -> LLM: Сформированный промпт\n(контекст + few-shot + CoT)
+    LLM --> RAG: Сгенерированный ответ
+    RAG -> Bot: Финальный ответ
+end
+
+RAG -> Logs: Логирование запроса и ответа
+
+== Оценка качества ответа ==
+
+Eval -> Logs: Загрузка сохранённых ответов
+Eval -> Eval: Загрузка golden_questions.json
+
+Eval -> Judge: Передать вопрос,\nэталонный ответ,\nфактический ответ
+Judge --> Eval: Оценка в формате true/false
+
+Eval -> Logs: Сохранить результат оценки
+
+== Потенциальные точки сбоя ==
+
+note over VectorDB
+Пустой или устаревший индекс
+→ отсутствие релевантных чанков
+end note
+
+note over LLM
+Слабый или шумный контекст
+→ риск галлюцинаций
+end note
+
+note over Judge
+Субъективность оценки
+→ возможны пограничные решения
+end note
+
+@enduml
