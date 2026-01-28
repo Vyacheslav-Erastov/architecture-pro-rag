@@ -1,0 +1,7 @@
+2026-01-28 23:50:05,311 [INFO] Start time: 2026-01-28 23:50:05.311150
+2026-01-28 23:50:05,311 [INFO] Use pytorch device_name: cpu
+2026-01-28 23:50:05,311 [INFO] Load pretrained SentenceTransformer: BAAI/bge-base-en
+2026-01-28 23:50:07,962 [INFO] Added 2 new chunks to index
+2026-01-28 23:50:07,963 [INFO] Index stats: vectors=2, file_size=0.01 MB
+2026-01-28 23:50:07,963 [INFO] End time: 2026-01-28 23:50:07.963073
+2026-01-28 23:50:07,963 [INFO] Total time: 2
