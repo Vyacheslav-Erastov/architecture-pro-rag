@@ -1,0 +1,57 @@
+{
+  "Q1": {
+    "question": "Who is Xarn Velgor?",
+    "expected_answer": "Xarn Velgor is the alter ego of Aren Arkan after he turned to the Obsidian Path of the Synth Flux.",
+    "should_answer": true
+  },
+  "Q2": {
+    "question": "Who was Aren Arkan before becoming Xarn Velgor?",
+    "expected_answer": "Aren Arkan was an Axiom Knight of the Unified Stellar Accord and the prophesied Chosen One of the Order of Axiom.",
+    "should_answer": true
+  },
+  "Q3": {
+    "question": "What was the Order of Axiom?",
+    "expected_answer": "The Order of Axiom was an organization of Flux-sensitive adepts dedicated to maintaining balance in the Synth Flux.",
+    "should_answer": true
+  },
+  "Q4": {
+    "question": "What organization replaced the Galactic Republic?",
+    "expected_answer": "I don't know",
+    "should_answer": false
+  },
+  "Q5": {
+    "question": "What is the Synth Flux?",
+    "expected_answer": "The Synth Flux is a pervasive energy field that can be harnessed by Flux-sensitive individuals.",
+    "should_answer": true
+  },
+  "Q6": {
+    "question": "What powers Plasma Edges?",
+    "expected_answer": "Plasma Edges are powered by focused energy derived from the Synth Flux.",
+    "should_answer": true
+  },
+  "Q7": {
+    "question": "What was Directive Omega?",
+    "expected_answer": "Directive Omega was an order that led to the extermination of the Order of Axiom.",
+    "should_answer": true
+  },
+  "Q8": {
+    "question": "What is the Void Core?",
+    "expected_answer": "Void Core is the apocalyptic superlaser technology, representing the ultimate weapon of terror and planetary destruction wielded by the Dominion of the Core.",
+    "should_answer": true
+  },
+  "Q9": {
+    "question": "How does the Void Core power Dominion battle stations?",
+    "expected_answer": "Void Core powers Dominion battle stations by acting as a hypermatter/Synth Flux reactor of unimaginable scale, whose energy is both the lifeblood of the station and the source of its planet-killing superweapon - a perfect manifestation of the Dominion's ideology of control through terror.",
+    "should_answer": true
+  },
+  "Q10": {
+    "question": "How did Xarn Velgor use the Synth Flux?",
+    "expected_answer": "Xarn Velgor used the Obsidian Path of Synth Flux for purposes: intimidation, enhancement, mental domination, and drawing power from negative emotions.",
+    "should_answer": true
+  },
+  "Q11": {
+    "question": "Was Xarn Velgor afraid of classic monsters?",
+    "expected_answer": "No, Xarn Velgor would not be afraid of classic monsters.",
+    "should_answer": true
+  }
+}
