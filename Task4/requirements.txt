@@ -1,0 +1,5 @@
+python-telegram-bot
+langchain
+openai
+sentence-transformers
+faiss-cpu
